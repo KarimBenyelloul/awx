@@ -3,6 +3,6 @@
   hosts: all
   gather_facts: true
   tasks:
-    - name: Display gathered facts (for debug/logging)
-      ansible.builtin.debug:
-        var: ansible_facts
+    - name: Print variable
+      debug:
+        msg: "The value of my_var is {{ ansible_facts }}"
