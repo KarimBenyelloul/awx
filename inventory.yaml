@@ -1,6 +1,6 @@
----
-awx:
-  ansible_host: 192.168.49.1
-
-
-  
+all:
+  hosts:
+    awx:
+      ansible_host: 192.168.49.1
+      ansible_user: kabe
+      ansible_password: kabe
